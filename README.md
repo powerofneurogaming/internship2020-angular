@@ -1,5 +1,9 @@
 # Ponginternship2020
 
+This is the webpage for the internship final project in 2020. It is hosted on the pong-center server under [ponginternship2020](http://pong-center.ucsd.edu/ponginternship2020/index.html), or redirect from [http://neurodiverseinternship.com](http://neurodiverseinternship.com).
+
+Below is the standard angular instructions.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.8.
 
 ## Development server
