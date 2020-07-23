@@ -1,0 +1,69 @@
+<div fxLayout="column" fxLayoutAlign="space-around center">
+    <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around center">
+        <div fxLayout="column" fxFlex="45" fxLayoutAlign="space-around center">
+            <div fxLayout="row" fxLayoutAlign="space-around center">
+                <h1>PoNG Internship Showcase Event</h1>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="space-around center">
+                <p>The PoNG Center created a skill-building internship model designed to expand access to jobs in the technology sector for adults on the Autism Spectrum. In the past 8 weeks, our interns developed research-based video games and practiced work-place soft skills. Now it's time for them to present their achievements!</p>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="space-around center">
+                <h2>August 6th, Thursday, 11:00 AM- 1:00 PM PDT</h2>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="space-around center">
+                <a mat-stroked-button class="linkbutton" href="https://ucsd.zoom.us/webinar/register/WN_1PyDRoEtSUuLWn-tGhOIHw" target="_blank">RSVP NOW!</a>
+            </div>
+        </div>
+        <div fxLayout="column" fxFlex="45" fxLayoutAlign="space-around center">
+            <img  src="assets/images/fowimage.jpg" alt="VR headset in use">
+        </div>
+    </div>
+    <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around center">
+        <div fxLayout="column" fxFlex="45" fxLayoutAlign="space-around center">
+            <img src="assets/images/leannejpg.jpg" alt="Leanne">
+        </div>
+        <div fxLayout="column" fxFlex="45" fxLayoutAlign="space-around center">
+            <div fxLayout="row" fxLayoutAlign="space-around center">
+                <h1>About the Future of Work Project at UC San Diego</h1>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="space-around center">
+                <p>Autism spectrum disorders and related conditions affect at least 1 out of 59 individuals, cost $137 billion per year in the U.S., and result in a staggering unemployment rate for adults that have the cognitive skill and valuable creative talents that can contribute substantially to the technology workforce. The goal of this project is to develop training technology as well as a skill-building internship model to expand access to jobs in the technology sector for neurodiverse young adults. <em>This work is supported by a grant from the National Science Foundation (#1928604).</em></p>
+            </div>
+        </div>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-around center" fxFlexFill>
+        <div class="bgimg">
+            <div class="bgimgdarken">
+                <div fxLayout="column" fxLayoutAlign="space-around center">
+                    <h1 class="center">Team Introduction</h1>
+                    <p>Each team includes a project manager, a programmer, an artist, a designer, a tester, and a coach. They worked together to develop a neuro game.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-around stretch" fxLayoutGap="10px">
+        <mat-card *ngFor="let t of teams" fxFlex>
+            <mat-card-header>
+                <mat-card-title>{{t.teamname}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <ul style="font-size: small;">
+                    <li *ngFor="let n of t.members"><em>{{n.title}}</em> : {{n.name}}</li>
+                </ul>
+                <mat-divider></mat-divider>
+                <p>{{t.blurb}}</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <mat-divider style="height: 30px;"></mat-divider>
+    <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around center">
+        <div fxLayout="column" fxFlex="90" fxLayoutAlign="space-around center">
+            <div fxLayout="row" fxLayout.sm="column" fxLayoutAlign="space-around center">
+                <h1>PoNG Center at the Qualcomm Insitute</h1>
+            </div>
+            <div fxLayout="row" fxLayout.sm="column" fxLayoutAlign="space-around center">
+                <p>At the Power of NeuroGaming (PoNG) Center at the Qualcomm Institute, UC San Diego, we are building a learning ecosystem around video games and sensor technology. By combining cognitive science, neuroscience, engineering, the digital arts, and education we seek to create games that meet a wide range of goals including medical rehabilitation, behavioral intervention, learning across the lifespan, and encouraging social change.</p>
+            </div>
+        </div>
+    </div>
+</div>

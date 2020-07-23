@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ponginternship2020"
+    }
+  },
+  "defaultProject": "ponginternship2020",
+  "cli": {
+    "analytics": false
+  }
 }

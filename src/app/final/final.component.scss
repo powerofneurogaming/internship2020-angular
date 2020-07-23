@@ -1,0 +1,34 @@
+img{
+    width: 100%;
+    height: auto;
+}
+
+.bgimg {
+    background-image: url('../../assets/images/gameplay.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.bgimgdarken{
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    z-index: 2;
+}
+
+.center {
+    margin-top: 150px;
+    width: 50%;
+    text-align: center;
+}
+
+.linkbutton{
+    background-color: orange;
+    color:black;
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+}
