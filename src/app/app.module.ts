@@ -14,13 +14,16 @@ import {MatDividerModule} from '@angular/material/divider';
 import { TopbarComponent } from './topbar/topbar.component';
 import {MatIconModule} from '@angular/material/icon';
 import { FooterComponent } from './footer/footer.component';
+import { TotopComponent } from './totop/totop.component';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
     AppComponent,
     FinalComponent,
     TopbarComponent,
-    FooterComponent
+    FooterComponent,
+    TotopComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ import { FooterComponent } from './footer/footer.component';
     MatToolbarModule,
     MatCardModule,
     MatDividerModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
