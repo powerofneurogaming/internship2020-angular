@@ -42,19 +42,24 @@
             </div>
         </div>
     </div>
-    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-around stretch" fxLayoutGap="10px">
-        <mat-card *ngFor="let t of teams" fxFlex>
-            <mat-card-header>
-                <mat-card-title>{{t.teamname}}</mat-card-title>
-            </mat-card-header>
-            <mat-card-content>
-                <ul style="font-size: small;">
-                    <li *ngFor="let n of t.members"><em>{{n.title}}</em> : {{n.name}}</li>
-                </ul>
-                <mat-divider></mat-divider>
-                <p style="padding-top: 10px;">{{t.blurb}}</p>
-            </mat-card-content>
-        </mat-card>
+    <div fxLayout.xs="column" fxLayout="row wrap" fxLayoutGap="10px grid">
+        <div fxFlex.sm="50%" fxFlex.md="33%" fxFlex.gt-md="25%" *ngFor="let t of teams">
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title>{{t.teamname}}</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <ul style="font-size: small;">
+                        <li *ngFor="let n of t.members"><em>{{n.title}}</em> : {{n.name}}</li>
+                    </ul>
+                    <mat-divider></mat-divider>
+                    <p fxFlexFill style="padding-top: 10px">{{t.blurb}}</p>
+                </mat-card-content>
+                <mat-card-actions fxLayoutAlign="center" style="padding-bottom: 10px;">
+                    <button mat-stroked-button color="primary" (click)="openDialog(t)">Learn More</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
     </div>
     <mat-divider style="height: 30px;"></mat-divider>
     <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around center">

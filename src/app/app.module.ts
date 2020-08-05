@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FinalComponent } from './final/final.component';
+import { FinalComponent, TeamDetailsDialog } from './final/final.component';
 
 import { FlexLayoutModule } from '@angular/flex-layout'
 import {MatSidenavModule} from '@angular/material/sidenav';
@@ -17,10 +17,14 @@ import { FooterComponent } from './footer/footer.component';
 import { TotopComponent } from './totop/totop.component';
 import {MatButtonModule} from '@angular/material/button';
 
+import {MatDialogModule} from '@angular/material/dialog'
+import {OverlayModule} from '@angular/cdk/overlay';
+
 @NgModule({
   declarations: [
     AppComponent,
     FinalComponent,
+    TeamDetailsDialog,
     TopbarComponent,
     FooterComponent,
     TotopComponent
@@ -35,7 +39,9 @@ import {MatButtonModule} from '@angular/material/button';
     MatCardModule,
     MatDividerModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    OverlayModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
