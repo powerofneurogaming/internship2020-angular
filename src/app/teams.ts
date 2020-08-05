@@ -121,7 +121,8 @@ export const teams = [
             },
             { title: "Coach", name: "Richard\u00A0Ellks" },
         ],
-        blurb: "2D click-and-drag game based on projectile motion, with the player taking on the role of a chef attempting to toss food at monsters to keep them away through estimating the power and trajectory of the throw."
+        blurb: "2D click-and-drag game based on projectile motion, with the player taking on the role of a chef attempting to toss food at monsters to keep them away through estimating the power and trajectory of the throw.",
+        gamelink: "https://drive.google.com/file/d/1byP5mb-UuIh6khitIbw1j6Z9Xyz_yJOA/view"
     },
     {
         teamname: "Fleischer Task",

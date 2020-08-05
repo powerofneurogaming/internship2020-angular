@@ -5,6 +5,9 @@
             {{data.teamdata.blurb}}
         </p>
     </div>
+    <div fxLayout="row" fxLayoutAlign="center" *ngIf="data.teamdata.gamelink">
+        <a style="padding: 10px;" mat-stroked-button color="primary" href="{{data.teamdata.gamelink}}">Play {{data.teamdata.teamname}}</a>
+    </div>
     <div fxLayout="row">
         <h2>Meet the team</h2>
     </div>
@@ -25,7 +28,6 @@
               <mat-card-actions *ngIf="n.linkedin">
                   <a href="{{n.linkedin}}">LinkedIn</a>
               </mat-card-actions>
-
         </mat-card>
     </div>
       </div>
