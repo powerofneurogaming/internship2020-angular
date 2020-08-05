@@ -5,7 +5,7 @@ export const teams = [
             {
                 title: "Programmer",
                 name: "Gilead\u00A0Cosman",
-                photo: "../../assets/images/small/Gili.gif"
+                photo: "assets/images/small/Gili.gif"
             },
             { title: "Proj.\u00A0Manager", name: "Jonathan\u00A0Chaney" },
             { title: "Artist", name: "Josh\u00A0Bell" },

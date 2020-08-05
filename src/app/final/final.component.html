@@ -42,8 +42,8 @@
             </div>
         </div>
     </div>
-    <div fxLayout.xs="column" fxLayout="row wrap" fxLayoutGap="10px grid">
-        <div fxFlex.sm="50%" fxFlex.md="33%" fxFlex.gt-md="25%" *ngFor="let t of teams">
+    <div fxLayout="row" fxLayout.lt-lg="row wrap" fxLayout.lt-md="column" fxLayoutGap="10px grid">
+        <div fxFlex fxFlex.lt-lg="33%" fxFlex.lt-md="95%" *ngFor="let t of teams">
             <mat-card>
                 <mat-card-header>
                     <mat-card-title>{{t.teamname}}</mat-card-title>
