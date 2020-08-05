@@ -57,7 +57,8 @@ export const teams = [
                 photo: "../../assets/images/small/AraJung.gif"
             },
         ],
-        blurb: "2D side-scroller that navigates the protagonist Plainfin Midshipman across different environments just outside of La Jolla Cove."
+        blurb: "2D side-scroller that navigates the protagonist Plainfin Midshipman across different environments just outside of La Jolla Cove.",
+        gamelink: "https://developer.cloud.unity3d.com/share/share.html?shareId=Wkxg9XOfML"
     },
     {
         teamname: "Hoyo Negro",
