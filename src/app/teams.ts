@@ -75,7 +75,8 @@ export const teams = [
             {
                 title: "Coach",
                 name: "Ara\u00A0Jung",
-                photo: "assets/images/small/AraJung.gif"
+                photo: "assets/images/small/AraJung.gif",
+                linkedin: "https://www.linkedin.com/in/arajung94/"
             },
         ],
         blurb: "2D side-scroller that navigates the protagonist Plainfin Midshipman across different environments just outside of La Jolla Cove.",
@@ -162,7 +163,7 @@ export const teams = [
             },
         ],
         blurb: "2D click-and-drag game based on projectile motion, with the player taking on the role of a chef attempting to toss food at monsters to keep them away through estimating the power and trajectory of the throw.",
-        gamelink: "https://drive.google.com/file/d/1byP5mb-UuIh6khitIbw1j6Z9Xyz_yJOA/view"
+        gamelink: "https://drive.google.com/file/d/1K3qRK5TMdCMLN86leCPVWd-XiNEzYbE_/view"
     },
     {
         teamname: "Fleischer Task",
