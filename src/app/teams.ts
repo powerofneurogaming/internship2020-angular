@@ -37,7 +37,7 @@ export const teams = [
             },
         ],
         blurb: "As a more challenging variant of the classic matching card game, Card Quest is a 2D Puzzle game where the player must move cards between two islands to the pattern on each island match.",
-        gameline: "https://dawnbreaker-games.itch.io/matching-card-game"
+        gamelink: "https://dawnbreaker-games.itch.io/matching-card-game"
     },
     {
         teamname: "Journey to the Kelp Forest",
