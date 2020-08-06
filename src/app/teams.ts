@@ -29,12 +29,14 @@ export const teams = [
             {
                 title: "Designer",
                 name: "Luc\u00A0Huynh",
+                photo: "assets/images/small/LucHuynh.gif",
                 linkedin: "https://www.linkedin.com/in/luc-huynh-0520bb1b4/"
             },
             {
                 title: "Coach",
                 name: "Brandon\u00A0Ehrlich",
-                photo: "assets/images/small/BrandonEhrlich.gif"
+                photo: "assets/images/small/BrandonEhrlich.gif",
+                linkedin: "https://www.linkedin.com/in/brandon-ehrlich-7255981b4/"
             },
         ],
         blurb: "As a more challenging variant of the classic matching card game, Card Quest is a 2D Puzzle game where the player must move cards between two islands to the pattern on each island match.",
@@ -119,7 +121,8 @@ export const teams = [
             {
                 title: "Coach",
                 name: "Corly\u00A0Huang",
-                photo: "assets/images/small/CorlyHuang.gif"
+                photo: "assets/images/small/CorlyHuang.gif",
+                linkedin: "https://www.linkedin.com/in/corly-huang-01826619a/"
             },
         ],
         blurb: "\"Hoyo Negro\" is an underwater exploratory game where players navigate through the Hoyo Negro cave to find bones.",
@@ -161,7 +164,8 @@ export const teams = [
             {
                 title: "Coach",
                 name: "Richard\u00A0Ellks",
-                photo: "assets/images/small/RichardEllks.gif"
+                photo: "assets/images/small/RichardEllks.gif",
+                linkedin: "https://www.linkedin.com/in/richard-ellks-6a7841149/"
             },
         ],
         blurb: "2D click-and-drag game based on projectile motion, with the player taking on the role of a chef attempting to toss food at monsters to keep them away through estimating the power and trajectory of the throw.",
