@@ -11,6 +11,7 @@ export const teams = [
             {
                 title: "Proj.\u00A0Manager",
                 name: "Jonathan\u00A0Chaney",
+                photo: "assets/images/small/JonathanChaney.gif",
                 linkedin: "https://www.linkedin.com/in/jonathan-chaney/"
             },
             {
@@ -94,6 +95,7 @@ export const teams = [
             {
                 title: "Proj.\u00A0Manager",
                 name: "Savannah\u00A0DeYoung",
+                photo: "assets/images/small/SavannahDeyoung.gif",
                 linkedin: "https://www.linkedin.com/in/savannah-deyoung-2533501b3/"
             },
             {
