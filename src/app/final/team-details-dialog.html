@@ -22,7 +22,7 @@
               <mat-card-content fxLayoutAlign="center">
                   <div [ngSwitch]="!!n.photo" fxLayoutAlign="center">
                     <img *ngSwitchCase="true" src="{{n.photo}}" alt="{{n.name}}">
-                    <img *ngSwitchCase="false" mat-card-image  src="../../assets/images/small/shiba2.gif" alt="{{n.name}}">
+                    <img *ngSwitchCase="false" mat-card-image  src="assets/images/small/shiba2.gif" alt="{{n.name}}">
                   </div>
               </mat-card-content>
               <mat-card-actions *ngIf="n.linkedin">
