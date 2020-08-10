@@ -55,7 +55,7 @@ export const teams = [
                 title: "Proj.\u00A0Manager",
                 name: "Joshua\u00A0Gagliano",
                 photo: "assets/images/small/JoshuaGagliano.gif",
-                linkedin: "https://www.linkedin.com/in/joshua-gagliano-84b6501a6/"
+                linkedin: "https://www.linkedin.com/in/joshua-gagliano-51582516b/"
             },
             {
                 title: "Artist",
