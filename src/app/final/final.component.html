@@ -1,77 +1,31 @@
 <div fxLayout="column" fxLayoutAlign="space-around center">
-    <div [ngStyle.gt-sm]="{'background-color': '#000'}" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-around center">
-        <div fxLayout="column" fxFlex="50" fxLayoutAlign="space-around center">
-            <div fxLayout="row" fxLayoutAlign="space-around center">
-                <h1 fxFill>PoNG Internship Showcase Event</h1>
-            </div>
-            <div fxLayout="row" fxFlex="90" fxLayoutAlign="space-around center">
-                <p style="margin:10px;">The PoNG Center created a skill-building internship model designed to expand access to jobs in the technology sector for adults on the Autism Spectrum. In the past 8 weeks, our interns developed research-based video games and practiced work-place soft skills. Now it's time for them to present their achievements!</p>
-            </div>
-            <div fxLayout="row" fxLayoutAlign="space-around center">
-                <h2>August 6th, Thursday, 11:00 AM- 1:00 PM PDT</h2>
-            </div>
-            <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-around center">
-                <a mat-stroked-button class="linkbutton" href="https://youtu.be/lpKo4hZqlQU" target="_blank">Neurodiverse Internship Showcase</a>
-                <a mat-stroked-button class="linkbutton" href="https://youtu.be/enAB2zPj9WA" target="_blank">Neurodiversity in Tech Panel</a>
-            </div>
-        </div>
-        <div fxLayout="column" fxFlex="50" fxFill fxLayoutAlign="space-around center">
-            <div class="fowimage"></div>
-        </div>
+    <div fxLayout="row" style="background-color: white;">
+        <p style="background-color: white; color: black; margin: 30px; font-size: x-large;">Our coalition seeks to support CTE programs in community colleges and other providers in the move to online offerings. We seek to use our past experiences
+            in related programming to improve instructor readiness in supporting Black and Latinx learners in their goal of successfully completing CTE certification.
+            Below we include links to bios of each team member and the centers, departments, and programs they engage. </p>
     </div>
-    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-around center">
-        <div fxLayout="column" fxFlex="50" fxFill fxLayoutAlign="space-around center">
-            <div class="leanneimage"></div>
-        </div>
-        <div fxLayout="column" fxFlex="50" fxLayoutAlign="space-around center">
-            <div fxLayout="row" fxLayoutAlign="space-around center">
-                <h1 style="text-align: center;">Future of Work Project at UC&nbsp;San&nbsp;Diego</h1>
+    <div *ngFor="let t of teams" style="height:100%; width:100%;background-color: black;">
+        <div fxLayout="row" fxLayoutAlign="start center" >
+            <div fxLayout="column" fxLayoutAlign="end start" style="padding-top: 10px;">
+                <h2 fxFlex style="margin-left: 10px;">{{t.groupName}}</h2>
             </div>
-            <div fxLayout="column" fxLayoutAlign="space-around center">
-                <p style="margin:10px;">Autism spectrum disorders and related conditions affect at least 1 out of 59 individuals, cost $137 billion per year in the U.S., and result in a staggering unemployment rate for adults that have the cognitive skill and valuable creative talents that can contribute substantially to the technology workforce. The goal of this project is to develop training technology as well as a skill-building internship model to expand access to jobs in the technology sector for neurodiverse young adults.</p>
-                <p><em>This work is supported by a grant from the National Science Foundation (#1928604).</em></p>
+            <span fxFlex></span>
+        </div>
+        <div fxLayout="row wrap" fxLayoutAlign="start stretch" fxLayoutGap="10px grid" style="width: 100%; background-color: white;">
+            <div fxLayout="column" style="color:black" *ngFor="let m of t.members">
+                <mat-card class="personcard">
+                    <div fxLayout="column" fxLayoutAlign="start center" (click)="openDialog(m)">
+                        <img mat-card-image src="{{m.photo}}">
+                    </div>
+                    <mat-card-content fxLayout="column" fxLayoutAlign="start center"  (click)="openDialog(m)">
+                        <div fxLayout="row" style="line-height: 1.1;" *ngFor="let l of m.name">{{l}}</div>
+                    </mat-card-content>
+                    <div fxLayout="row" fxLayoutAlign="center">
+                        <a mat-stroked-button class="linkbutton" href="{{m.linkout}}" target="_blank">{{m.linkoutTitle}}</a>
+                    </div>
+                </mat-card>
             </div>
         </div>
     </div>
-    <div fxLayout="row" fxLayoutAlign="space-around center" fxFlexFill>
-        <div class="bgimg">
-            <div class="bgimgdarken">
-                <div fxLayout="column" fxLayoutAlign="space-around center">
-                    <h1 class="center">Team Introduction</h1>
-                    <p style="max-width:600px;">Each team includes a programmer, project manager, artist, tester, designer, and a coach. The interns and coach worked together with their client to develop a game from concept to production.</p>
-                    <p style="padding-top:50px; max-width:600px;">Try out the games by clicking on Learn More for each project.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div fxLayout="row" fxLayout.lt-lg="row wrap" fxLayout.lt-md="column" fxLayoutGap="10px grid">
-        <div fxFlex fxFlex.lt-lg="33%" fxFlex.lt-md="95%" *ngFor="let t of teams">
-            <mat-card>
-                <mat-card-header>
-                    <mat-card-title>{{t.teamname}}</mat-card-title>
-                </mat-card-header>
-                <mat-card-content>
-                    <ul style="font-size: small;">
-                        <li *ngFor="let n of t.members"><em>{{n.title}}</em> : {{n.name}}</li>
-                    </ul>
-                    <mat-divider></mat-divider>
-                    <p fxFlexFill style="padding-top: 10px">{{t.blurb}}</p>
-                </mat-card-content>
-                <mat-card-actions fxLayoutAlign="center" style="padding-bottom: 10px;">
-                    <button mat-stroked-button color="primary" (click)="openDialog(t)">Learn More</button>
-                </mat-card-actions>
-            </mat-card>
-        </div>
-    </div>
-    <mat-divider style="height: 30px;"></mat-divider>
-    <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around center">
-        <div fxLayout="column" fxFlex="90" fxLayoutAlign="space-around center">
-            <div fxLayout="row" fxLayout.sm="column" fxLayoutAlign="space-around center">
-                <h1>PoNG Center at the Qualcomm Insitute</h1>
-            </div>
-            <div fxLayout="row" fxLayout.sm="column" fxLayoutAlign="space-around center">
-                <p style="margin:10px;">At the <a style="color: white;" href="http://pong-center.ucsd.edu">Power of NeuroGaming (PoNG) Center</a> at the Qualcomm Institute, UC San Diego, we are building a learning ecosystem around video games and sensor technology. By combining cognitive science, neuroscience, engineering, the digital arts, and education we seek to create games that meet a wide range of goals including medical rehabilitation, behavioral intervention, learning across the lifespan, and encouraging social change.</p>
-            </div>
-        </div>
-    </div>
-</div>
+    
+ </div>

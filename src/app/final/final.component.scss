@@ -1,58 +1,11 @@
 @import '~@angular/material/theming';
 
-img{
-    width: 100%;
-    height: auto;
-}
-
-.bgimg {
-    background-image: url('../../assets/images/gameplay.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 500px;
-}
-
-.fowimage{
-    background-image: url('../../assets/images/fowimage.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 500px;
-}
-.fowbg {
-    background-image: linear-gradient(to top right, rgba(50,50,50,1), rgba(90,90,90,0));
-    overflow: hidden;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-}
-
-.leanneimage{
-    background-image: url('../../assets/images/leannejpg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 500px;
-}
-.leannebg {
-    background-image: linear-gradient(to top right, rgba(50,50,50,0), rgba(50,50,50,1));
-    overflow: hidden;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-}
-
-.bgimgdarken{
-    background: rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    background-size: cover;
-    width: 100%;
-    height: 500px;
-    z-index: 2;
+.mat-card img{
+    object-fit: cover; /*this makes the image in src fit to the size specified below*/
+    width: 200px; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+    height: 200px;
+    padding: 0px;
+    margin: 0px;
 }
 
 .center {
@@ -85,5 +38,15 @@ img{
 .mat-card-content{
     flex-grow: 1;
     overflow: auto;
+    color: black;
+    margin: 0px;
+    padding: 0px;
     //outline: 1px solid red;
+    text-align: center;
+}
+
+.personcard{
+    background-color: white;
+    height: 380px;
+    width: 200px;
 }
