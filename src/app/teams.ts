@@ -64,7 +64,7 @@ export const teams = [
         ],
     },
     {
-        groupName : "Arizona State University and Partner Team Members",
+        groupName : "Partner Team Members",
         members : [
             {
                 name: [
