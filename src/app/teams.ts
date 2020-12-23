@@ -126,7 +126,7 @@ export const teams = [
             },
         ],
         blurb: "\"Hoyo Negro\" is an underwater exploratory game where players navigate through the Hoyo Negro cave to find bones.",
-        gamelink: "https://developer.cloud.unity3d.com/share/share.html?shareId=bJbJRoHMG8"
+        gamelink: "http://pong-center-dev.ucsd.edu/hoyonegro/index.html"
     },
     {
         teamname: "Feeding Frenzy",
